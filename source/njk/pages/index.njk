@@ -1,0 +1,120 @@
+{% extends "_layout.njk" %}
+
+{% set title = 'Главная' %}
+
+{% block main %}
+  <section class="container page-main__tizer">
+    <h1 class="visually-hidden">Pink</h1>
+
+    <b class="tizer-title">Взгляните на жизнь иначе!</b>
+
+    <a class="tizer__button" href="#!">Скачать приложение</a>
+
+    <ul class="apps-list">
+      <li class="apps-list__item">
+        <a class="apps-link apps-link--apple" href="#!">
+          <span class="visually-hidden">Apple</span>
+        </a>
+      </li>
+      <li class="apps-list__item">
+        <a class="apps-link apps-link--android" href="#!">
+          <span class="visually-hidden">Android</span>
+        </a>
+      </li>
+      <li class="apps-list__item">
+        <a class="apps-link apps-link--windows" href="#!">
+          <span class="visually-hidden">Windows</span>
+        </a>
+      </li>
+    </ul>
+
+    <p class="tizer__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+  </section>
+
+  <section class="advantages page-main__advantages">
+    <h2 class="visually-hidden">Преимущества</h2>
+
+    <p class="advantages__lead">Устали от серости мегаполиса?</p>
+    <p class="advantages__lead">Нам есть, что вам предложить!</p>
+
+    <dl class="advantages__list">
+      <dt class="advantages__item">Поднимает настроение</dt>
+      <dd class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</dd>
+      <dt class="advantages__item">Меняет мир вокруг</dt>
+      <dd class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</dd>
+      <dt class="advantages__item">Заводит новых друзей</dt>
+      <dd class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</dd>
+    </dl>
+  </section>
+
+  <section class="reviews page-main__reviews">
+    <h2 class="visually-hidden">Отзывы</h2>
+
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <blockquote class="reviews__body">
+          <cite class="reviews__author">Николай Петров</cite>
+          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+      </li>
+    </ul>
+  </section>
+
+  <section class="tariffs page-main__tariffs">
+    <h2 class="visually-hidden">Тарифы</h2>
+
+    <table class="tariffs__table">
+      <thead class="">
+        <tr class="tariffs__names">
+          <th class="hit tariffs__name">
+            Стандарт
+            <span class="hit__content">Хит</span>
+            <p class="tariffs__price">3,99 USD</p>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody class="tariffs__props">
+        <tr class="tariffs__details">
+          <th class="tariffs__detail">Розовый фильтр</th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">Есть</p>
+          </td>
+        </tr>
+        <tr class="tariffs__details">
+          <th class="tariffs__detail">Смайлики</th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--yes">Есть</p>
+          </td>
+        </tr>
+        <tr class="tariffs__details">
+          <th class="tariffs__detail">Комментарии</th>
+          <td class="tariffs__detail">
+            <p class="tariffs__value tariffs__value--no">Нет</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="contacts page-main__footer">
+    <p class="contacts__heading">Остались вопросы?</p>
+    <p class="contacts__heading">Свяжитесь с нами!</p>
+
+    <dl class="contacts__list">
+      <dt class="contacts__item">Звоните:</dt>
+      <dd class="contacts__description">
+        <a href="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </dd>
+      <dt class="contacts__item">Пишите:</dt>
+      <dd class="contacts__description">
+        <a href="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </dd>
+      <dt class="contacts__item">Приезжайте в гости:</dt>
+      <dd class="contacts__description">
+        <a href="contacts__link" href="#!">ул. Большая Конюшенная, 19/8</a>
+      </dd>
+      <dt class="contacts__item">Карта местоположения</dt>
+    </dl>
+  </footer>
+{% endblock %}

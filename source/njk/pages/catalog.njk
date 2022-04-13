@@ -3,5 +3,180 @@
 {% set title = 'Каталог' %}
 
 {% block main %}
-  Фотографии
+
+<section class="content">
+  <h1 class="content__title">Фотографии<br>пользователей</h1>
+  <p class="content__description">
+    Взгляните на фотографии, которые<br>
+    выкладывают пользователи!<br>
+    Видите, как не хватает ваших?
+  </p>
+
+  <section class="gallery content__gallery">
+    <h2 class="visually-hidden">Фотографии галлереи</h2>
+    <figure class="photo photo__big">
+      <a class="photo__link" href="#">Панорама дня</a>
+      <img class="photo__image" src="img/panorama-mobile.jpg" alt="Панорама дня">
+
+      <figcaption class="photo__content photo__content--big">
+        <p class="photo__author">
+          <b>Анна</b>
+          <span class="photo__date">(5 минут назад)</span>
+        </p>
+
+        <p class="photo__description photo__description--big">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          трансляцию в перископе, задавайте свои вопросы!
+        </p>
+
+        <form class="photo__likes photo__likes--big" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 215</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/car-mobile.jpg" alt="Автомобиль">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Левон</b>
+          <span class="photo__date">(5 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 356</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/drum-mobile.jpg" alt="Барабаны">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Антон</b>
+          <span class="photo__date">(12 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Соседи будут рады!</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 666</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/roof-mobile.jpg" alt="Крыша">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Борис</b>
+          <span class="photo__date">(20 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 215</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/tent-mobile.jpg" alt="Шатер">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Сергей</b>
+          <span class="photo__date">(25 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Самая кубанская в мире!</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 4</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/legs-mobile.jpg" alt="Ноги">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Максим</b>
+          <span class="photo__date">(40 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Где снег-то?</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 150</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+
+    <figure class="photo">
+      <img class="photo-image" src="img/wing-mobile.jpg" alt="Крыло">
+
+      <figcaption class="photo__content">
+        <p class="photo__author">
+          <b>Надежда</b>
+          <span class="photo__date">(45 часов назад)</span>
+        </p>
+
+        <p class="photo__description">Всем GM и взаимные лайки!</p>
+
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 2560</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section class="photo-editor">
+    <h2 class="visually-hidden">Редактор фотографий</h2>
+    <p class="photo-editor__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+
+
+    <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="photo-editor__file">
+        <label class="visually-hidden" for="add">добавить файл</label>
+        <input class="visually-hidden" type="file" id="add" name="image" accept="image/jpeg, image/png" required="">
+      </p>
+
+      <div class="photo-editor__filters">
+        <p class="photo-editor__group">
+          <button class="photo-editor__filter" type="button" aria-label="Режим обрезки"></button>
+          <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="80" aria-label="Обрезать">
+        </p>
+
+      <p class="photo-editor__group">
+        <button class="photo-editor__filter" type="button" aria-label="Режим заливки"></button>
+        <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="20" aria-label="Заливка">
+      </p>
+
+      <p class="photo-editor__group">
+        <button class="photo-editor__filter" type="button" aria-label="Настройка контраста"></button>
+        <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="50"aria-label="Контраст">
+      </p>
+
+      <div class="photo-editor__buttons">
+        <button class="photo-editor__button" type="submit">Запостить</button>
+        <button class="photo-editor__button photo-editor__button--secondary" type="reset">Отмена</button>
+      </div>
+    </form>
+  </section>
+</section>
 {% endblock %}

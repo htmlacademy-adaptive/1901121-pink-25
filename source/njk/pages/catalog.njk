@@ -4,184 +4,179 @@
 
 {% block main %}
 
-<section class="container teaser page-catalog">
-  <h1 class="teaser__title">Фотографии<br>пользователей</h1>
-</section>
+<section class="content">
+  <h1 class="content__title">Фотографии<br>пользователей</h1>
+  <p class="content__description">
+    Взгляните на фотографии, которые<br>
+    выкладывают пользователи!<br>
+    Видите, как не хватает ваших?
+  </p>
 
-<section class="page-inner">
-  <div class="page-inner__content">
-    <p class="page-inner__description">
-      Взгляните на фотографии, которые<br>
-      выкладывают пользователи!<br>
-      Видите, как не хватает ваших?</p>
-  </div>
+  <section class="gallery content__gallery">
+    <h2 class="visually-hidden">Фотографии галлереи</h2>
+    <figure class="photo photo__big">
+      <a class="photo__link" href="#">Панорама дня</a>
+      <img class="photo__image" src="img/panorama-mobile.jpg" alt="Панорама дня">
 
-  <section class="gallery">
-    <h2 class="visually-hidden">Галлерея фотографий</h2>
-
-    <figure class="foto foto__big">
-      <a class="foto-link" href="#">Панорама дня</a>
-      <img class="foto-image" src="img/panorama-mobile.jpg" alt="Панорама дня">
-
-      <figcaption class="foto__content foto__content__big">
-        <p class="foto__author">
+      <figcaption class="photo__content photo__content--big">
+        <p class="photo__author">
           <b>Анна</b>
-          <span class="foto__date">(5 минут назад)</span>
+          <span class="photo__date">(5 минут назад)</span>
         </p>
 
-        <p class="foto__description foto__description__big">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-          трансляцию в перископе, задавайте свои вопросы!</p>
+        <p class="photo__description photo__description--big">
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+          трансляцию в перископе, задавайте свои вопросы!
+        </p>
 
-        <div class="foto__likes foto__likes__big">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 215</span>
-        </div>
+        <form class="photo__likes photo__likes--big" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 215</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/car-mobile.jpg" alt="Автомобиль">
+    <figure class="photo">
+      <img class="photo-image" src="img/car-mobile.jpg" alt="Автомобиль">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Левон</b>
-          <span class="foto__date">(5 часов назад)</span>
+          <span class="photo__date">(5 часов назад)</span>
         </p>
 
-        <p class="foto__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+        <p class="photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 356</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 356</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/drum-mobile.jpg" alt="Барабаны">
+    <figure class="photo">
+      <img class="photo-image" src="img/drum-mobile.jpg" alt="Барабаны">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Антон</b>
-          <span class="foto__date">(12 часов назад)</span>
+          <span class="photo__date">(12 часов назад)</span>
         </p>
 
-        <p class="foto__description">Соседи будут рады!</p>
+        <p class="photo__description">Соседи будут рады!</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 666</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 666</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/roof-tablet.jpg" alt="Крыша">
+    <figure class="photo">
+      <img class="photo-image" src="img/roof-mobile.jpg" alt="Крыша">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Борис</b>
-          <span class="foto__date">(20 часов назад)</span>
+          <span class="photo__date">(20 часов назад)</span>
         </p>
 
-        <p class="foto__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 215</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 215</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/tent-tablet.jpg" alt="Шатер">
+    <figure class="photo">
+      <img class="photo-image" src="img/tent-mobile.jpg" alt="Шатер">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Сергей</b>
-          <span class="foto__date">(25 часов назад)</span>
+          <span class="photo__date">(25 часов назад)</span>
         </p>
 
-        <p class="foto__description">Самая кубанская в мире!</p>
+        <p class="photo__description">Самая кубанская в мире!</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 4</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 4</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/legs-tablet.jpg" alt="Ноги">
+    <figure class="photo">
+      <img class="photo-image" src="img/legs-mobile.jpg" alt="Ноги">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Максим</b>
-          <span class="foto__date">(40 часов назад)</span>
+          <span class="photo__date">(40 часов назад)</span>
         </p>
 
-        <p class="foto__description">Где снег-то?</p>
+        <p class="photo__description">Где снег-то?</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 150</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 150</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
 
-    <figure class="foto">
-      <img class="foto-image" src="img/wing-tablet.jpg" alt="Крыло">
+    <figure class="photo">
+      <img class="photo-image" src="img/wing-mobile.jpg" alt="Крыло">
 
-      <figcaption class="foto__content">
-        <p class="foto__author">
+      <figcaption class="photo__content">
+        <p class="photo__author">
           <b>Надежда</b>
-          <span class="foto__date">(45 часов назад)</span>
+          <span class="photo__date">(45 часов назад)</span>
         </p>
 
-        <p class="foto__description">Всем GM и взаимные лайки!</p>
+        <p class="photo__description">Всем GM и взаимные лайки!</p>
 
-        <div class="foto__likes">
-          <button class="foto__like-button" type="button" aria-label="Нравится!"></button>
-
-          <span class="foto__like-count">Нравится: 2560</span>
-        </div>
+        <form class="photo__likes" action="https://echo.htmlacademy.ru" method="post">
+          <span class="photo__like-count">Нравится: 2560</span>
+          <button class="photo__like-button" type="submit" name="like" value="1" aria-label="Нравится!"></button>
+        </form>
       </figcaption>
     </figure>
   </section>
 
-  <section class="foto-editor">
+  <section class="photo-editor">
     <h2 class="visually-hidden">Редактор фотографий</h2>
-    <p class="foto-editor__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+    <p class="photo-editor__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
-    <div class="foto-editor__form">
-      <img class="foto-image form-image" src="img/winter-tablet.jpg" alt="Зимняя дорога">
-    </div>
 
-    <div class="foto-editor__filter">
-      <button class="foto-editor__filter" type="button" aria-label="Обрезать">
-        <img class="foto-editor__icon" src="img/crop.svg" alt="Обрезать">
-      </button>
+    <form class="photo-editor__form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="photo-editor__file">
+        <label class="visually-hidden" for="add">добавить файл</label>
+        <input class="visually-hidden" type="file" id="add" name="image" accept="image/jpeg, image/png" required="">
+      </p>
 
-      <button class="foto-editor__filter" type="button" aria-label="Заливка">
-        <img class="foto-editor__icon" src="img/fill.svg" alt="Заливка">
-      </button>
+      <div class="photo-editor__filters">
+        <p class="photo-editor__group">
+          <button class="photo-editor__filter" type="button" aria-label="Режим обрезки"></button>
+          <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="80" aria-label="Обрезать">
+        </p>
 
-      <button class="foto-editor__filter" type="button" aria-label="Контраст">
-        <img class="foto-editor__icon" src="img/contrast.svg" alt="Контраст">
-      </button>
+      <p class="photo-editor__group">
+        <button class="photo-editor__filter" type="button" aria-label="Режим заливки"></button>
+        <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="20" aria-label="Заливка">
+      </p>
 
-      <input class="foto-editor__filter-range" type="range" min="1" max="100" name="range" value="80">
-    </div>
+      <p class="photo-editor__group">
+        <button class="photo-editor__filter" type="button" aria-label="Настройка контраста"></button>
+        <input class="photo-editor__filter-range" type="range" min="1" max="100" name="range" value="50"aria-label="Контраст">
+      </p>
 
-    <div class="foto-editor__buttons">
-      <button class="foto-editor__button button button--active" type="submit">Запостить</button>
-      <button class="foto-editor__button button" type="reset">Отмена</button>
-    </div>
+      <div class="photo-editor__buttons">
+        <button class="photo-editor__button" type="submit">Запостить</button>
+        <button class="photo-editor__button photo-editor__button--secondary" type="reset">Отмена</button>
+      </div>
+    </form>
   </section>
+</section>
 {% endblock %}
